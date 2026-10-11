@@ -1,0 +1,221 @@
+/* CSS Variables */
+:root {
+    --primary-color: #000000;
+    --primary-hover: #2854cf;
+    --bg-color: #278e8b;
+    --card-bg: #eeebe3;
+    --text-color: #000000;
+    --text-muted: #435266;
+    --border-color: hsl(0, 11%, 7%);
+    --radius: 16px;
+    --shadow: 0 4px 6px -1px rgba(7, 7, 7, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.header-card, section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #87ceeb 5px solid;
+}
+
+.header-card {
+    text-align: center;
+
+}
+
+.header-card h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.header-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.blue-box {
+    background-color: #90D5FF;
+    border: 1px solid #eeebe3;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+}
+
+.box {
+    background-color: #90d5ff;
+    border: 1px solid #eeebe3;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+}
+
+.live-preview {
+    border: 2px dashed #90d5ff;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.live-preview h1 {
+    text-align: center;
+}
+
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+pre::after {
+    content: "HTML";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h3, h4 {
+    color: var(--text-color);
+}
+
+ul, ol {
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.congrats-card {
+    background: linear-gradient(135deg, #696787, #a89bb5);
+    color: white;
+    text-align: center;
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    margin-top: 1.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--shadow);
+}
+
+.congrats-card h2 {
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+}
+
+.congrats-card p {
+    color: #e2e8f0;
+}
+
+.header-card:hover, 
+section:hover, 
+.congrats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
