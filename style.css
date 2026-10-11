@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
     --primary-color: #000000;
-    --primary-hover: #2854cf;
+    --primary-hover: #fff8f8;
     --bg-color: #278e8b;
     --card-bg: #eeebe3;
     --text-color: #000000;
@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 2rem 1rem;
 }
+
 
 .header-card, section {
     background-color: var(--card-bg);
@@ -53,14 +54,6 @@ body {
     color: var(--text-muted);
     font-size: 1rem;
     margin: 0;
-}
-
-.blue-box {
-    background-color: #90D5FF;
-    border: 1px solid #eeebe3;
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    margin-top: 1rem;
 }
 
 .box {
